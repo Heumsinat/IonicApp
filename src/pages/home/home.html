@@ -1,17 +1,51 @@
-<ion-header>
+<ion-header >
   <ion-navbar>
-    <ion-title>Home</ion-title>
+    <ion-title text-center>Home</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+  <ion-row unit-view-head wrap>
+      <ion-col width-100 >
+        <ion-card>
+          <img src = "assets/img/images.jpg"/>
+        </ion-card>
+      </ion-col>
+  </ion-row>
+  <ion-row wrap >
+      <ion-col width-50>
+        <button ion-button block (click)="page1()">
+          <ion-col>
+          <img src = "assets/img/images(1).jpg" width="20%"/> <br>
+          <label>button1</label>
+          </ion-col>
+        </button>
+      </ion-col>
+      <ion-col width-50>
+        <button ion-button block (click)="page2()">
+          <ion-col>
+          <img src = "assets/img/images(2).jpg" width="20%"/> <br>
+          <label>button2</label>
+          </ion-col>
+        </button>
+      </ion-col>
+  </ion-row>
+  <ion-row  wrap >
+      <ion-col width-50>
+        <button ion-button block (click)="page3()">
+          <ion-col>
+          <img src = "assets/img/images(3).jpg" width="20%"/> <br>
+          <label>button3</label>
+          </ion-col>
+        </button>
+      </ion-col>
+      <ion-col width-50>
+        <button ion-button block (click)="page4()">
+          <ion-col>
+          <img src = "assets/img/images(4).jpg" width="20%"/> <br>
+          <label>button4</label>
+          </ion-col>
+        </button>
+      </ion-col>
+  </ion-row>
 </ion-content>
